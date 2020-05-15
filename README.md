@@ -37,17 +37,22 @@ We engineered 65 features from the event log dataset. These can be broadly categ
 * Session/interaction/time on site in the weeks 1,2,3,4 prior to latest activity
 * Ratio of activity in the final fortnight compared to the fortnight previous.
 
-We tested four different machine learning classifiers with default parameters to see which was best for the data. The classifiers and their results were:
-* Naive Bayes (f1 score xxxx)
-* Logistic Regression (f1 score xxxx)
-* Gradient Boosting Tree (f1 score xxxx)
-* Linear SVM (f1 score xxxx)
+We tested five different machine learning classifiers with default parameters to see which was best for the data. The classifiers and their results were:
+* Naive Bayes (f1 score 0.813)
+* Logistic Regression (f1 score 0.828)
+* Random Forest (f1 score 0.891)
+* Gradient Boosting Tree (f1 score 0.808)
+* Linear SVM (f1 score 0.817)
 
-We took the Gradient Boosting Tree forward for final hyperparamter tuning. The parameters and performance for the best model were:
-* F1 score: 
-* Area under the Precision-recall curve: 
+We took the Random Forest forward for final hyperparamter tuning. The parameters and performance for the best model were:
+* F1 score: 0.919
+* Area under the Precision-recall curve: 0.511
 
+## Improvements
+* Reduce the number of features of the input dataset by removing highly correlated variables
+* Run over more hyperparameters
+* Repeat using the full dataset (which is available in AWS/IBM Watson) running it on a Spark cluster
 
 ## Licensing
 
-Dataset in this repository appear courtesy of Udacity.
+Dataset in this repository appears courtesy of Udacity.
