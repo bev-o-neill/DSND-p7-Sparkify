@@ -14,14 +14,17 @@ Sparkify, a fictitions music streaming company, are concerned about their own cu
 
 ## File Descriptions
 
-* Sparkify.ipynb contains all the code for data loading, preprocessing, analysis and model development.
+* Sparkify-analysis and preprocessing.ipynb contains all the code for data loading, preprocessing, analysis and feature engineering. Produces dfFinal.csv as output.
+
+* Sparkify-model build.ipynb does exactly what it says on the tin: develops and tunes a model on the dataset output in Sparkify-analysis and preprocessing.ipynb
 
 * mini_sparkify_event_data.json is a copy of the dataset used for our notebook (JSON format).
 
+* dfFinal.csv the dataset output from Sparkify-analysis and preprocessing.ipynb. This is the data upon which we build our customer churn predictive model.
 
 ## Results
 
-The main findings of this analysis are summarised in a blog post available here: 
+The main findings of this analysis are summarised in a blog post available here: https://medium.com/@oneill.beverley/how-deep-is-their-love-749bc9913c66
 
 We engineered 65 features from the event log dataset. These can be broadly categorised as:
 * Time since registration and latest activity
